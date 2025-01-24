@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeria CB</title>
+    <link rel="stylesheet" href="/css/styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Joyeria Carolina Builes</a></h1>
+        <div class="container-search-bar">
+            <img id="search-icon-img" src="../contenido/search-icon.svg" alt="Icono de busqueda" >
+            <input id="search-bar-value" type="text" placeholder="Buscar joya por nombre">
+        </div>
+    </header>
+    <div class="container-main">
+        <div class="container-form">
+            <h2>Guardar nueva Joya</h2>
+            <form action="" class="form-joya">
+                <label for="Nombre">Nombre: </label>
+                <input type="text" name="Nombre" id="form-input-nombre" placeholder="Nombre joya..." required>
+                <label for="Descripcion">Descripcion: </label>
+                <input type="text" name="Descripcion" id="form-input-descripcion" placeholder="Descripcion joya..." required>
+                <label for="Precio">Precio: </label>
+                <input type="number" name="Precio" id="form-input-precio" placeholder="Precio joya..." required>
+                <div class="container-btn-submit">
+                    <button type="submit" class="btn-guardar">Guardar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Revisar después de crear la interaccion con el JavaScript y la conexion con la API --> 
+         <!-- Esto del div ya lo creo dentro del javascript -->
+        <div class="container-info">
+            <!-- <div class="container-each-joya">
+                <p>Id:</p>
+                <p>Nombre:</p>
+                <p>Descripcion:</p>
+                <p>Precio:</p>
+                <div class="buttons-joya">
+                    <button>Borrar</button>
+                    <button>Modificar</button>
+                </div>
+            </div> -->
+        </div>
+        <!-- HASTA AQUI LO DEJO QUIETO, DE ESO YA SE ENCARGA MI JAVASCRIPT -->
+    </div>
+    <footer>
+        <p>Hecho por Carolina Uribe Builes ;D</p>
+        <div class="redes-contacto">
+            <a href="https://www.linkedin.com/in/carolina-uribe-builes-94015b2ab/" target="_blank"><img class="redes-contacto-img" src="../contenido/linkedin-brands-solid.svg" alt="Icono linkedIn"></a>
+            <a href="https://github.com/Carolinaubes" target="_blank"><img class="redes-contacto-img" src="../contenido/square-github-brands-solid.svg" alt="Icono github"></a>
+        </div>
+        <p>© Copyright 2025</p>
+    </footer>
+        
+    <!-- Script al final del body para permitir al DOM cargar por completo -->
+    <script src="/js/script.js"></script> 
+</body>
+</html>

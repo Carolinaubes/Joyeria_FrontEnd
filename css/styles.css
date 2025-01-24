@@ -1,0 +1,209 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #30332e;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden; /*Desactivar la barra horizontal del navegador*/
+}
+
+@media (max-width: 1220px) {
+    /* Aquí van los estilos específicos */
+    body header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body .container-search-bar {
+        position: relative;
+    }
+}
+
+h1,h2,h3 {
+    font-family: "JetBrains Mono", serif;
+    /*font-optical-sizing: auto;*/
+    /* font-weight:bold; */
+    font-style: normal;
+}
+
+input {
+    font-family: "JetBrains Mono", serif;
+}
+
+header{
+    background:#ee4266;  /*#7e8d85*/
+    margin-top: 0;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-search-bar {
+    display: flex;
+    position: absolute;
+    margin-left: 10px;
+    height: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-search-bar #search-icon-img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.container-search-bar input{
+    height: 30px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+header h1{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 a {
+    text-decoration: none;
+    color:rgb(244, 244, 244) ;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom:30px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-form h2 {
+    color: azure;
+}
+
+.form-joya {
+    display: flex;
+    flex-direction: column;
+    background: #3f88c5;  /*#3f88c5 azul*/  /*#d72638c3 rojo oscuro*/
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-joya label {
+    font-size: 20px;
+    color: white;
+}
+
+.container-form form input {
+    margin-bottom:15px;
+    font-size: 15px;
+}
+
+.container-btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-guardar {
+    width: 150px;
+    border-radius: 15px;
+    box-shadow: inset;
+    height: 45px;
+    background: green;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* DESDE AQUI LO DEJO QUIETO, NO TOCAR LOS ESTILOS */
+.container-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    height: fit-content;
+    background: #d72638c3;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.p-contenedor-info {
+    color: white;
+    font-size: 20px;
+}
+
+.container-each-joya {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+    padding-left: 10px;
+    background: white;
+    min-width: 300px;
+    width: calc(25% - 20px);
+    height: 200px;
+    border-radius: 10px;
+}
+
+.p-container-joya {
+    background: red;
+    /* display: inline; */
+}
+
+.buttons-joya {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.btn-borrar {
+    background: rgb(233, 50, 50);
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-modificar {
+    background: rgb(42, 127, 212);
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+/* HASTA AQUI LO DEJO QUIETO */
+
+footer {
+    bottom: 0;
+    background-color: #010400;
+    color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; 
+}
+
+.redes-contacto {
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.redes-contacto-img {
+    width: 40px;
+}
