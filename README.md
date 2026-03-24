@@ -31,7 +31,7 @@ Interfaz web desarrollada en **HTML, CSS y JavaScript** que consume la API REST 
 
 Este proyecto consume la API REST del backend de Joyería. Asegúrate de tener el backend corriendo antes de usar el frontend.
 
-👉 Repositorio Backend: [Joyeria_Backend](https://github.com/tu-usuario/Joyeria_Backend)
+👉 Repositorio Backend: [Joyeria_Backend](https://github.com/Carolinaubes/Joyeria_Backend)
 
 Para apuntar al backend, verifica la URL base en `script.js`:
 ```javascript
